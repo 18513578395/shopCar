@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child_cb"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/child_img"
+        app:layout_constraintLeft_toRightOf="@+id/child_cb"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/child_img"
+        android:id="@+id/child_tv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/child_img"
+        app:layout_constraintTop_toBottomOf="@+id/child_tv"
+        android:id="@+id/child_price"
+        />
+    <com.example.l.myapplication.weight.MyView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/child_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/myview"
+        ></com.example.l.myapplication.weight.MyView>
+</android.support.constraint.ConstraintLayout>
